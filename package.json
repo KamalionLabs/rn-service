@@ -1,7 +1,7 @@
 {
   "name": "@kamalion/rn-service",
   "description": "Utilities to help axios to make better react native apps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "typings": "./types/index.d.ts",
   "repository": "https://github.com/KamalionLabs/rn-service.git",
@@ -17,6 +17,7 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "@kamalion/react-service": "^1.0.1",
     "@react-native-community/async-storage": "^1.7.1",
     "axios": "^0.19.2"
   },

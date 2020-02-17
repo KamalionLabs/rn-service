@@ -1,4 +1,4 @@
-import { RequestType, ResponseType } from ".";
+import { RequestType, ResponseType } from "@kamalion/react-service";
 export declare class BaseService {
     private controller;
     constructor(controller: string);

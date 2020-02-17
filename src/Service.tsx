@@ -1,6 +1,6 @@
 import axios, {AxiosRequestConfig} from "axios";
 import AsyncStorage from "@react-native-community/async-storage";
-import {RequestType, ResponseType} from ".";
+import {RequestType, ResponseType} from "@kamalion/react-service";
 
 var config = require("../../../../src/config.json");
 

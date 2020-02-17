@@ -41,7 +41,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = __importDefault(require("axios"));
 var async_storage_1 = __importDefault(require("@react-native-community/async-storage"));
-var _1 = require(".");
+var react_service_1 = require("@kamalion/react-service");
 var config = require("../../../../src/config.json");
 var BaseService = /** @class */ (function () {
     function BaseService(controller) {
@@ -68,7 +68,7 @@ var BaseService = /** @class */ (function () {
     };
     // Create a request using an URL
     BaseService.prototype.CreateRequestByUrl = function (requestType, url, data, responseType) {
-        if (responseType === void 0) { responseType = _1.ResponseType.Default; }
+        if (responseType === void 0) { responseType = react_service_1.ResponseType.Default; }
         return __awaiter(this, void 0, void 0, function () {
             var token, options, result;
             return __generator(this, function (_a) {
@@ -84,9 +84,9 @@ var BaseService = /** @class */ (function () {
                                 Authorization: "Bearer " + token
                             }
                         };
-                        if (responseType === _1.ResponseType.Blob)
+                        if (responseType === react_service_1.ResponseType.Blob)
                             options.responseType = "blob";
-                        else if (responseType === _1.ResponseType.Zip)
+                        else if (responseType === react_service_1.ResponseType.Zip)
                             options.responseType = "arraybuffer";
                         return [4 /*yield*/, axios_1.default(options)];
                     case 2:
@@ -97,7 +97,7 @@ var BaseService = /** @class */ (function () {
         });
     };
     BaseService.prototype.CreateRequest = function (requestType, route, data, version, responseType) {
-        if (responseType === void 0) { responseType = _1.ResponseType.Default; }
+        if (responseType === void 0) { responseType = react_service_1.ResponseType.Default; }
         return __awaiter(this, void 0, void 0, function () {
             var url;
             return __generator(this, function (_a) {
