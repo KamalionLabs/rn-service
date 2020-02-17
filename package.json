@@ -1,0 +1,26 @@
+{
+  "name": "@kamalion/rn-service",
+  "description": "Utilities to help axios to make better react native apps",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "./types/index.d.ts",
+  "repository": "https://github.com/KamalionLabs/rn-service.git",
+  "author": "Rony Moura <ronymmoura@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KamalionLabs/rn-service/issues"
+  },
+  "homepage": "https://github.com/KamalionLabs/rn-service#readme",
+  "devDependencies": {
+    "@types/node": "^13.7.1",
+    "gluegun": "^4.1.2",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.7.1",
+    "axios": "^0.19.2"
+  },
+  "scripts": {
+    "build": "node build.js"
+  }
+}
