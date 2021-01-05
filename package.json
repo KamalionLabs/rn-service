@@ -19,7 +19,7 @@
   "dependencies": {
     "@kamalion/react-service": "^1.0.1",
     "@react-native-community/async-storage": "^1.7.1",
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "scripts": {
     "build": "node build.js"
